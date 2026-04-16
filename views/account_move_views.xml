@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_account_move_quick_actions_form" model="ir.ui.view">
+        <field name="name">account.move.form.brim.quick.actions</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <!--
+                Inject the "Reset to Draft" button into the standard invoice
+                header bar. It appears only when the invoice is in the
+                'posted' state and only for users in the Accounting Manager group.
+            -->
+            <xpath expr="//header/button[@name='action_post']" position="before">
+                <button
+                    name="action_quick_reset_to_draft"
+                    string="Reset to Draft"
+                    type="object"
+                    class="btn-warning"
+                    groups="account.group_account_manager"
+                    invisible="state != 'posted'"
+                    confirm="This will cancel and reset this invoice to Draft. Are you sure?"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>
