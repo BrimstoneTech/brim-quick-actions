@@ -16,7 +16,6 @@
                     string="Reset to Draft"
                     type="object"
                     class="btn-warning"
-                    groups="account.group_account_manager"
                     invisible="state != 'posted'"
                     confirm="This will cancel and reset this invoice to Draft. Are you sure?"
                 />

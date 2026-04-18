@@ -1,28 +1,25 @@
-# Quick Actions: Reset Invoice to Draft
+# Quick Actions: One-Click Invoice Reset (Odoo 17)
 
-> [!IMPORTANT]
-> **Stop wasting clicks. Reset any posted invoice to draft in a single button press.**
-> FREE MODULE by BrimstoneTech
+**Streamline your accounting workflow by removing tedious revalidation steps.**
 
-A free utility for Odoo 17 Community that adds a single "Reset to Draft" button directly onto any posted invoice or vendor bill. Saves time, reduces clicks, and streamlines the accounting correction process.
+Standard Odoo requires multiple steps to revert a posted invoice. This module adds a professional, high-visibility "Reset to Draft" action directly to your invoices, allowing you to quickly correct mistakes and stay agile.
 
-## 🚀 Key Features
+## ⚡ Features
+- **One-Click Reset**: Instantly cancel and reset any posted invoice to "Draft" state.
+- **Permission Friendly**: Available to all billing users by default to keep operations fast.
+- **Safety First**: Includes a confirmation prompt to prevent accidental resets.
+- **Universal Design**: Works on Invoices, Bills, and Credit Notes.
 
-*   **One-Click Reset**: A single orange button in the invoice header bar replaces multiple menu clicks.
-*   **Manager-Only Access**: Restricted to the **Accounting Manager** group to prevent unauthorized changes.
-*   **Safety Confirmation**: Native Odoo confirmation popup prevents accidental clicks.
-*   **100% Community Safe**: Depends only on the standard `account` module.
+## 💰 Pricing
+- **Price**: **FREE** 
+- Part of the Brimstone Business Essentials suite.
 
-## ⚙️ Technical Details
+---
 
-*   **Odoo Version**: 17.0
-*   **License**: LGPL-3 (Free)
-*   **Dependency**: `account`
-*   **Enterprise Required**: No
-*   **Target Models**: `account.move` (Invoices and Vendor Bills)
+### 🛡️ Installation
+1. Install the module.
+2. Open any Posted Invoice.
+3. Use the new yellow **"Reset to Draft"** button in the top header.
 
-## 📞 Support & Contact
-
-Developed by **BrimstoneTech: Innovating the Architecture of Work**
-*   **Email**: brimstonetech1@gmail.com
-*   **Phone**: +256 744 429 293
+---
+**Developed by BrimstoneTech | Support: brimstonetech1@gmail.com | +256 744 429 293**
